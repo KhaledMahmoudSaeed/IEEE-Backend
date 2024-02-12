@@ -139,3 +139,41 @@ The kinds of indexing in Postgresql are:
   ---
   ### Refrence
   - [primary keys vs unique keys](https://www.gleek.io/blog/primary-vs-unique)
+
+  ----
+  # Task 4
+   ## Topics
+   - [Relations (one to one & one to many)](#relations-one-to-one--one-to-many)
+   - [write-ahead logging](#write-ahead-logging)
+
+   ### Relations (one to one & one to many)
+ 1. one to one
+ In One-to-One relationship, one record of the first table will be linked to zero or one record of another table. For example, each employee in the Employee table will have a corresponding row in EmployeeDetails table that stores the current passport details for that particular employee. So, each employee will have zero or one record in the EmployeeDetails table. This is called zero or one-to-one relationship.
+![](https://www.tutorialsteacher.com/Content/images/sqlserver/tables-relations5.png)
+Above, EmployeeID column is the primary key as well as foreign key column in the EmployeeDetails table that linked to EmployeeID of the Employee table. This forms zero or one-to-one relation.
+1. one to many
+One-to-Many is the most commonly used relationship among tables. A single record from one table can be linked to zero or more rows in another table.
+The Employee and Address tables are linked by the key column EmployeeID. It is a foreign key in the Address table linking to the primary key EmployeeID in the Employee table. Thus, one record of the Employee table can point to multiple records in the Address table. This is a One-to-Many relationship.
+![](https://www.tutorialsteacher.com/Content/images/sqlserver/tables-relations1.png)
+   ### write-ahead logging
+The Write Ahead Logging (WAL) technique is a popular method among database users to preserve the atomicity and durability of their data writes. This technique operates on the concept of logging your data writes in secure storage prior to making any permanent changes in your database. This way you can ensure the durability of your writes in case of a server crash.
+
+```
+class WALEntry…
+
+  private final Long entryIndex;
+  private final byte[] data;
+  private final EntryType entryType;
+  private final long timeStamp;
+```
+
+
+**Key Features of Write Ahead Logging**
+1. Reduced Disk Writes: WAL reduces the amount of disk writes significantly as you only need to flush the log file to the disk when committing a transaction. 
+1. Decreased Syncing Cost: Since log files accept data sequentially, the syncing cost of log data is much less as compared to that of flushing data pages. 
+1. Fast Redo Operation: WAL supports high-speed roll-forward recovery (REDO). This implies any modifications that were aborted in between can be recovered from the log records.
+1. Accessible Data Backup: WAL caters to your data backup needs and also provides you with backup and point-in-time recovery. You can simply archive the WAL data and revert to any time instant that occurred prior to the latest data write.
+
+### Refrence
+  - [Relations (one to one & one to many)](https://www.tutorialsteacher.com/sqlserver/tables-relations)
+  - [write-ahead logging](https://hevodata.com/learn/write-ahead-logging/)
