@@ -177,3 +177,52 @@ class WALEntry…
 ### Refrence
   - [Relations (one to one & one to many)](https://www.tutorialsteacher.com/sqlserver/tables-relations)
   - [write-ahead logging](https://hevodata.com/learn/write-ahead-logging/)
+
+   ----
+  # Task 4
+   ## Topics
+   -[Multi-version concurrency Control](#multi-version-concurrency-control)
+   -[triggers](#triggers)
+   -[How can you take the backup of a database?](#how-can-you-take-the-backup-of-a-database)
+
+
+
+
+### Multi-version concurrency Control
+The main difference between multiversion and lock models is that in MVCC locks acquired for querying (reading) data don't conflict with locks acquired for writing data and so reading never blocks writing and writing never blocks reading.
+The ANSI/ISO SQL standard defines four levels of transaction isolation in terms of three phenomena that must be prevented between concurrent transactions.These undesirable phenomena are:
+
+**dirty reads**:A transaction reads data written by concurrent uncommitted transaction.
+
+**non-repeatable reads**:A transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read).
+
+**phantom read**:A transaction re-executes a query returning a set of rows that satisfy a search condition and finds that the set of rows satisfying the condition has changed due to another recently-committed transaction.
+### triggers
+A trigger is a stimulus that elicits a reaction. In the context of mental illness, "trigger" is often used to mean something that brings on or worsens symptoms. This often happens to people with a history of trauma or who are recovering from mental illness, self-harm, addiction, and/or eating disorders.
+ SQL triggers are a powerful tool that every developer who deals with databases should know how to use. An SQL trigger allows you to specify SQL actions that should be executed automatically when a specific event occurs in the database. For example, you can use a trigger to automatically update a record in one table whenever a record is inserted into another table.
+
+
+### How can you take the backup of a database?
+**Take a backup**
+1. Launch SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
+1. Expand the Databases node in Object Explorer.
+1. Right-click the database, hover over Tasks, and select Back up.
+1. Under Destination, confirm that the path for your backup is correct. If you need to change the path, select Remove to remove the existing path, and then Add to type in a new path. You can use the ellipses to navigate to a specific file.
+1. Select OK to take a backup of your database.
+
+**Restore a backup**
+1. Launch SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
+
+1. Right-click the Databases node in Object Explorer and select Restore Database.
+1. Select Device:, and then select the ellipses to locate your backup file.
+
+1. Select Add and navigate to where your .bak file is located. Select the .bak file and then select OK.
+
+1. Select OK to close the Select backup devices dialog box.
+
+1. Select OK to restore the backup of your database.
+### REFERENCES
+
+- [Multi-version concurrency Control](https://www.postgresql.org/docs/7.1/transaction-iso.html)
+- [triggers](https://www.dbvis.com/thetable/sql-triggers-what-they-are-and-how-to-use-them/)
+- [How can you take the backup of a database?](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16&tabs=ssms#take-a-backup)
