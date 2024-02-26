@@ -27,7 +27,7 @@
 |---|---|
 |[Higher Than 75 Marks](https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true)|[Higher Than 75 Marks](/PostgreSQL/Task-3/Higher%20than%2075%20marks.sql)|
 |[Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true)|[Employee Names](/PostgreSQL/Task-3/Employee%20names.sql)|
-|[Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true)|[Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true)|
+|[Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true)|[Employee Salaries](/PostgreSQL/Task-3/Employee%20Salaries.sql)|
 |[Japanese Cities' Attributes](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true)|[Japanese Cities' Attributes](/PostgreSQL/Task-3/Japanese%20Cities'%20Attributes.sql)|
 |[Japanese Cities' Names](https://www.hackerrank.com/challenges/japanese-cities-name/problem?isFullScreen=true)|[Japanese Cities' Names](/PostgreSQL/Task-3/Japanese%20Cities’%20names.sql)|
 |[Weather Observation Station 2](https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true)|[Weather Observation Station 2](/PostgreSQL/Task-3/Weather%20Observation%20Station%202.sql)|
