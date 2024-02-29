@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Registration </title>
+<meta name="charset" content="UTF-8">
+<meta name="description" content="the apply form for students">
+<meta name="keywords" content="name,phone,acticvity, gender, email,home">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body style="background-color : deepskyblue">
+<h1 style="color: lavender"> Registration Form </h1>
+<hr/>
+<form>
+  <label for="fname" style="color :SaddleBrown" ><b><big>First Name:</big></b></label>
+  <input type="text"/>
+  <br/><br/>
+  <label for="lname" style="color :SaddleBrown" ><b><big>Last Name:</big></b></label>
+  <input type="text"/>
+  <br/><br/>
+  <label for="phone" style="color :SaddleBrown"><b><big>Phone Number:</big></b></label>
+  <input type="number" style="color :SaddleBrown" />
+  <br/><br/>
+  <label style="color :SaddleBrown" ><b><big>Gender: </big><b><br/>   </label>
+  <label for="Male" style="color :SaddleBrown"><b><big>Male</big> </b></label>
+  <input type="radio" name="gender">
+  <label for="Female" style="color :SaddleBrown"> <b><big>Female</big></b> </label>
+  <input type="radio" name="gender">
+  <br/><br/>
+  <label for="date" style="color :SaddleBrown"><b><big>Date Of Birth: </big></b></label>
+  <input type="date">
+  <br/><br/>
+  <label for="img" style="color :SaddleBrown"><b><big>Your Profile Image </big></b/></label>
+  <input type="image">
+  <br/><br/><br/>
+  <label for="hooby" style="color :SaddleBrown"><b><big>Hobbies </big></b></label>
+  <br/><hr/>
+  <label for="hooby6" style="color :SaddleBrown"><b><big>Reading</big></b> </label>
+  <input type="checkbox" /><br/>
+  <label for="hooby1" style="color :SaddleBrown"><b><big>Football</big></b> </label>
+  <input type="checkbox" /><br/>
+  <label for="hooby2" style="color :SaddleBrown"><b><big>Vollyball</big></b> </label>
+  <input type="checkbox" /><br/>
+  <label for="hooby3" style="color :SaddleBrown"><b><big>HourseRiding</big></b> </label>
+  <input type="checkbox" /><br/>
+  <label for="hooby4" style="color :SaddleBrown"><b><big>BodyBuilding</big></b> </label>
+  <input type="checkbox" /><br/>
+  <label for="hooby5" style="color :SaddleBrown"><b><big>Music Listenting </big></big></b></label>
+  <input type="checkbox" /><br/>
+  <br/><hr/>
+</form>
+<form>
+<label for="field" style="color :SaddleBrown"><b><big>Choose your Technical Track</big></b> </label><br/>
+  <select name="tech">
+    <option name="backend"><b>BackEnd</b></option>
+    <option name="forntend"><b>frontEnd</b></option>
+    <option name="ai"><b>AI</b></option>
+    <option name="mobile"><b>Mobile</b></option>
+    <option name="embed"><b>Embedded</b></option>
+  </select>
+  <br/><br/><hr/>
+<label for="cv" style="color :SaddleBrown"><b><big>Your CV:</big></b> </label>
+<input type="file">
+<br/><br/>
+
+<p style="color :SaddleBrown"><b><big>Click the button below to start recording your 1-minute introduction.</big></b></p>
+<button id="startRecording"><b><big>Start Recording</big></b></button>
+<button id="stopRecording" disabled><b><big>Stop Recording</big></b></button>
+<audio id="audioPlayer" controls></audio>
+<br/><br/>
+<input type="submit" />
+<hr/><br/><br/>
+<a href="index.html">Home page</a>
+
+
+
+</body>
+
+</html>

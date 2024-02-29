@@ -1,6 +1,6 @@
 # IEEE-Backend
 
-### 1- PostgeSQL
+### 1- PostgreSQL
 ---
 1- [Gym Mangment System](/PostgreSQL/gym%20management%20system)<br>
 2- [Research](/PostgreSQL/PostgreSQL.md)<br>
