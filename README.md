@@ -100,22 +100,22 @@
 [First Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-1-to-5/)
 |Soultion|
 |:---:|
-|[First Assignment](/PHP/Assignments/1%20Assignment%201.php)|
-|[Second Assignment](/PHP/Assignments/1%20Assignment%202.php)|
-|[Third Assignment](/PHP/Assignments/1%20Assignment%203.php)|
-|[Fourth Assignment](/PHP/Assignments/1%20Assignment%204.php)|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%204.php)|
 ---
 [Second Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-6-to-12/)
 |Soultion|
 |:---:|
-|[First Assignment](/PHP/Assignments/2%20Assignment%201.php)|
-|[Second Assignment](/PHP/Assignments/2%20Assignment%202.php)|
-|[Third Assignment](/PHP/Assignments/2%20Assignment%203.php)|
-|[Fourth Assignment](/PHP/Assignments/2%20Assignment%204.php)|
-|[Fifth Assignment](/PHP/Assignments/2%20Assignment%205.php)|
-|[Sixth Assignment](/PHP/Assignments/2%20Assignment%206.php)|
-|[Seventh Assignment](/PHP/Assignments/2%20Assignment%207.php)|
-|[Eighth Assignment](/PHP/Assignments/2%20Assignment%208.php)|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-5-12/2%20Assignment%208.php)|
 ---
 
 
