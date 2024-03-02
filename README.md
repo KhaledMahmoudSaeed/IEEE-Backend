@@ -84,9 +84,9 @@
 ---
 ### 2- HTML
 ``` ```<details><summary>**Tasks**</summary>
-[Home Page](/HTML/index.html)
-[Registration Page](/HTML/Registration.html)
-[Research](/HTML/web.md)
+- [Home Page](/HTML/index.html)
+- [Registration Page](/HTML/Registration.html)
+- [Research](/HTML/web.md)
 </details>
 
 ---
