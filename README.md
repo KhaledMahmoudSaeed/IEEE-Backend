@@ -1,10 +1,11 @@
 # IEEE-Backend
 
 ### 1- PostgreSQL
----
+
+``` ```<details><summary>**Tasks**</summary>
 1- [Gym Mangment System](/PostgreSQL/gym%20management%20system)<br>
 2- [Research](/PostgreSQL/PostgreSQL.md)<br>
-``` ```<details><summary>**3-Tasks**</summary>
+``` ```<details><summary>3- Tasks</summary>
 ``` ```<details><summary>**Task 2**</summary>
 
 |Problems|Solutions|
@@ -77,6 +78,8 @@
 
 </details>
 </details>
+</details>
+
 
 ---
 ### 2- HTML
@@ -85,6 +88,8 @@
 [Registration Page](/HTML/Registration.html)
 [Research](/HTML/web.md)
 </details>
+
+---
 
 ### 3- PHP
 ``` ```<details><summary>**Tasks**</summary>
@@ -118,3 +123,5 @@
 
 
 </details>
+
+---
