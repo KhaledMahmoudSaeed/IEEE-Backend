@@ -3,7 +3,16 @@
 ### 1- PostgreSQL
 
 ``` ```<details><summary>**Tasks**</summary>
-1- [Gym Mangment System](/PostgreSQL/gym%20management%20system)<br>
+1- [Gym Mangment System](/PostgreSQL/gym%20management%20system)
+``` ```<details><summary>Files</summary>
+|Solutions|
+|---|
+|[clas table](/PostgreSQL/gym%20management%20system/class%20table.sql)|
+|[equipment](/PostgreSQL/gym%20management%20system/equipment.sql)|
+|[instructor](/PostgreSQL/gym%20management%20system/instructor%20table.sql)|
+|[Main Database](/PostgreSQL/gym%20management%20system/The%20Database%20and%20member%20table.SQL)|
+</details><br/>
+
 2- [Research](/PostgreSQL/PostgreSQL.md)<br>
 ``` ```<details><summary>3- Tasks</summary>
 ``` ```<details><summary>**Task 2**</summary>
@@ -100,22 +109,22 @@
 [First Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-1-to-5/)
 |Soultion|
 |:---:|
-|[First Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%201.php)|
-|[Second Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%202.php)|
-|[Third Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%203.php)|
-|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-1-5/1%20Assignment%204.php)|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-1-5/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-1-5/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-1-5/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-1-5/Assignment%204.php)|
 ---
 [Second Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-6-to-12/)
 |Soultion|
 |:---:|
-|[First Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%201.php)|
-|[Second Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%202.php)|
-|[Third Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%203.php)|
-|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%204.php)|
-|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%205.php)|
-|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%206.php)|
-|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-6-12/2%20Assignment%207.php)|
-|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-5-12/2%20Assignment%208.php)|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%208.php)|
 ---
 
 
