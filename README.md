@@ -126,7 +126,29 @@
 |[Seventh Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%207.php)|
 |[Eighth Assignment](/PHP/Assignments/Assignments-lessons-6-12/Assignment%208.php)|
 ---
+[Third Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-13-to-19/)
+|Soultion|
+|:---:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-13-19/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-13-19/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-13-19/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-13-19/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-13-19/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-13-19/Assignment%206.php)|
 
+---
+[Fourth Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-20-to-29/)
+|Soultion|
+|:---:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-20-29/Assignment%208.php)|
+---
 
 
 

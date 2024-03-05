@@ -1,0 +1,14 @@
+<?php
+/*
+break 
+continue  
+clone
+or
+const
+var
+xor
+use
+for 
+enddeclare  
+*/
+;

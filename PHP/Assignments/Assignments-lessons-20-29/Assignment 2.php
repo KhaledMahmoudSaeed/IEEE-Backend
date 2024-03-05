@@ -1,0 +1,24 @@
+<?php
+$a ="10";
+echo (int)$a . " ";
+echo gettype((int)$a);
+echo '<br>';
+echo (int)$a  . " ";
+echo get_debug_type((int)$a);
+echo '<br>';
+var_dump((int) $a);
+echo '<br>';
+echo ($a + 0) . " ";
+echo gettype($a+0);
+echo '<br>';
+echo ($a *1) . " ";
+echo gettype($a*1);
+echo '<br>';
+echo intval($a) . " ";
+echo gettype(intval($a));
+echo '<br>';
+echo +$a;
+echo gettype(+$a);
+echo '<br>';
+echo -$a;
+echo gettype(-$a);
