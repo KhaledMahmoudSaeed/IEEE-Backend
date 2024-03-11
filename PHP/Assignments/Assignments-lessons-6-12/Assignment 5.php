@@ -13,19 +13,24 @@ now;
 
 # There is a different soultions because I can't use any of escape characters to make a new line 
 
-echo '<pre>';
-echo "Hello 'Elzero' 
-We Love \$Programming$ . PHP_EUL
-Languages Specially \"PHP\"";
-echo '</pre>';
 
-echo "yxy0".PHP_EOL
+// echo '<pre>';
+// echo "Hello 'Elzero' \nWe Love \$Programming$ \nLanguages Specially \"PHP\"";
+// echo '</pre>';
 
-echo '<pre>';
-echo "Hello 'Elzero' \nWe Love \$Programming$ \nLanguages Specially \"PHP\"";
-echo '</pre>';
+// echo '<pre>';
+// echo "Hello 'Elzero' nl2br(\n)We Love \$Programming$ nl2br(\n)Languages Specially \"PHP\"";
+// echo '</pre>';
 
-#note that without using <pre> before text neither  \n nor \r\n will be useful or work
-echo "Hello 'Elzero' \r\n
-We Love \$Programming$ \n
-Languages Specially \"PHP\"";
+// echo '<pre>';
+// echo "Hello 'Elzero' 
+// We Love \$Programming$ . PHP_EUL
+// Languages Specially \"PHP\"";
+// echo '</pre>';
+
+
+// #note that without using <pre> before text neither  \n nor \r\n will be useful or work
+// echo "Hello 'Elzero' \r\n
+// We Love \$Programming$ \n
+// Languages Specially \"PHP\"";
+

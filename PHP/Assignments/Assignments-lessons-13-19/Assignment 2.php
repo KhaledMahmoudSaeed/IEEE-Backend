@@ -6,7 +6,7 @@ echo '<pre>';
     echo $elzero;
     echo '<br>';
     echo $$name;
-    echo "\r\n${$name}";
+    echo "\r\n${$name}";//echo nl2br("\n"); actually this fun replace \n and put <br>
     echo <<<"here"
 
     $elzero

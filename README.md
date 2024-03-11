@@ -151,6 +151,47 @@
 ---
 
 
+[Fifth Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-30-to-36/)
+|Soultion|
+|:---:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-30-36/Assignment%208.php)|
+
+---
+[Sixth Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-37-to-42/)
+|Soultion|
+|:---:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%208.php)|
+|[Ninth Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%209.php)|
+|[Tenth Assignment](/PHP/Assignments/Assignments-lessons-37-42/Assignment%2010.php)|
+
+---
+[Seventh Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-43-to-52/)
+|Soultion|
+|:---:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%208.php)|
+|[Ninth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%209.php)|
+
 
 
 </details>
