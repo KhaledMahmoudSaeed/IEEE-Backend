@@ -1,8 +1,5 @@
 <?php
 $message = "Hello";
+$$message=fn($d) => "Hello" ." " . $d;
 
-${$message} = function($name) use ($message) {
-    return $message . " " . $name;
-};
-
-echo ${$message}("Osama"); // Hello Osama
+echo $Hello("Osama"); // Hello Osama
