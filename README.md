@@ -3,8 +3,8 @@
 ### 1- PostgreSQL
 
 ``` ```<details><summary>**Tasks**</summary>
-1- [Gym Mangment System](/PostgreSQL/gym%20management%20system)
-``` ```<details><summary>Files</summary>
+```A``` <br>[Gym Mangment System](/PostgreSQL/gym%20management%20system)
+<details><summary>Files</summary>
 |Solutions|
 |---|
 |[clas table](/PostgreSQL/gym%20management%20system/class%20table.sql)|
@@ -13,9 +13,9 @@
 |[Main Database](/PostgreSQL/gym%20management%20system/The%20Database%20and%20member%20table.SQL)|
 </details><br/>
 
-2- [Research](/PostgreSQL/PostgreSQL.md)<br>
-``` ```<details><summary>3- Tasks</summary>
-``` ```<details><summary>**Task 2**</summary>
+```B```<br>[Research](/PostgreSQL/PostgreSQL.md)<br>
+```C```<details><summary>Tasks</summary>
+```1```<details><summary>**Task 2**</summary>
 
 |Problems|Solutions|
 |---|---|
@@ -31,7 +31,7 @@
 
 ---
 
-``` ```<details><summary>**Task 3**</summary>
+```2```<details><summary>**Task 3**</summary>
 
 |Problems|Solutions|
 |---|---|
@@ -52,7 +52,7 @@
 
 ---
 
-``` ```<details><summary>**Task 4**</summary>
+```3```<details><summary>**Task 4**</summary>
 
 |Problems|Solutions|
 |---|---|
@@ -72,7 +72,7 @@
 
 ---
 
-``` ```<details><summary>**Task 5**</summary>
+```4```<details><summary>**Task 5**</summary>
 
 |Problems|Solutions|
 |---|---|
@@ -102,10 +102,11 @@
 
 ### 3- PHP
 ``` ```<details><summary>**Tasks**</summary>
-[Research](/PHP/PHP.md) <br/>
-**Assignmemnts**
+[PHP Research](/PHP/PHP.md) <br/>
 
 ---
+## Assignmemnts
+
 [First Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-1-to-5/)
 |Soultion|
 |:---:|
@@ -192,6 +193,40 @@
 |[Eighth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%208.php)|
 |[Ninth Assignment](/PHP/Assignments/Assignments-lessons-43-52/Assignment%209.php)|
 
+---
+[Eighth Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-53-to-62/)
+|Soultion|
+|:--:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-53-62/Assignment%207.php)|
+
+---
+[Ninth Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-63-to-72/)
+|Soultion|
+|:---:|
+|[First Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%201.php)|
+|[Second Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%202.php)|
+|[Third Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%203.php)|
+|[Fourth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%204.php)|
+|[Fifth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%205.php)|
+|[Sixth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%206.php)|
+|[Seventh Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%207.php)|
+|[Eighth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%208.php)|
+|[Ninth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%209.php)|
+|[Tenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2010.php)|
+|[Eleventh Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2011.php)|
+|[Twelfth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2012.php)|
+|[Thirteenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2013.php)|
+|[Fourteenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2014.php)|
+|[Fifteenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2015.php)|
+|[Sixteenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2016.php)|
+|[Seventeenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2017.php)|
+|[Eighteenth Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2018.php)|
 
 
 </details>
