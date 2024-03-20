@@ -137,27 +137,19 @@
 
 ---
 
-[9<sup>th</sup> Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-63-to-72/)
-|Soultion|
-|:---:|
-|[1<sup>st</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%201.php)|
-|[2<sup>nd</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%202.php)|
-|[3<sup>rd</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%203.php)|
-|[4<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%204.php)|
-|[5<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%205.php)|
-|[6<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%206.php)|
-|[7<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%207.php)|
-|[8<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%208.php)|
-|[9<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%209.php)|
-|[10<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2010.php)|
-|[11<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2011.php)|
-|[12<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2012.php)|
-|[13<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2013.php)|
-|[14<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2014.php)|
-|[15<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2015.php)|
-|[16<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2016.php)|
-|[17<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2017.php)|
-|[18<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2018.php)|
+|[9<sup>th</sup> Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-63-to-72/)|Conitnue|[10<sup>th</sup> Assignment Questions](https://elzero.org/php-bootcamp-assignments-lesson-from-73-to-81/)|
+|:---:|:---:|:---:|
+|Soultion|Soultion|Soultion|
+|[1<sup>st</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%201.php)|[10<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2010.php)|[1<sup>st</sup> Assignment](/PHP/Assignments/Assignments-lessons-73-81/Assignment%201.php)
+|[2<sup>nd</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%202.php)|[11<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2011.php)|[2<sup>nd</sup> Assignment](/PHP/Assignments/Assignments-lessons-73-81/Assignment%202.php)|
+|[3<sup>rd</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%203.php)|[12<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2012.php)|[3<sup>rd</sup> Assignment](/PHP/Assignments/Assignments-lessons-73-81/Assignment%203.php)|
+|[4<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%204.php)|[13<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2013.php)|[4<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-73-81/Assignment%204.php)|
+|[5<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%205.php)|[14<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2014.php)|[5<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-73-81/Assignment%205.php)|
+|[6<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%206.php)|[15<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2015.php)|[6<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-73-81/Assignment%206.php)|
+|[7<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%207.php)|[16<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2016.php)|---|
+|[8<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%208.php)|[17<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2017.php)|---|
+|[9<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%209.php)|[18<sup>th</sup> Assignment](/PHP/Assignments/Assignments-lessons-63-72/Assignment%2018.php)|---|
+
 
 
 </details>
