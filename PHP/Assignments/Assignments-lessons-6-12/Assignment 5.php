@@ -1,6 +1,6 @@
 <?php
 # This is my main solution
-echo <<< 'now'
+echo <<<'now'
 <dl>
     <dt>Hello "'Elzero'" </dt>
     <dt> We Love $Programming$</dt>

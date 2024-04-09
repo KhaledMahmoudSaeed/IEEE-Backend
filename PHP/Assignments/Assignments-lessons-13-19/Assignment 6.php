@@ -1,7 +1,5 @@
 <?php
 
-
-
 echo __LINE__;
 echo '<br>';
 echo __FILE__;

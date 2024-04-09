@@ -8,6 +8,6 @@ $let_two = "z";
 $str = "El%er0";
 
 
-$str[$num_one]=$let_one;
-$str[(int)$num_two]=$let_two;
+$str[$num_one] = $let_one;
+$str[(int) $num_two] = $let_two;
 echo $str;

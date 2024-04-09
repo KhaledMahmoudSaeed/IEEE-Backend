@@ -1,7 +1,7 @@
 <?php
 $something = "Programming";
 
-echo <<< "code"
+echo <<<"code"
     Hello \PHP\
     We Love $something
 code;

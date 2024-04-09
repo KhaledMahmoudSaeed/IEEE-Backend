@@ -9,5 +9,5 @@ $friends = [
 ];
 
 echo "<pre>";
-print_r(array_chunk($friends,2));
+print_r(array_chunk($friends, 2));
 echo "</pre>";

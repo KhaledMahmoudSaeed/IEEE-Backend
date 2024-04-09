@@ -1,6 +1,6 @@
 <?php
-$rndom = rand(10,20);
-if($rndom !=10 && $rndom !=20 ){
+$rndom = rand(10, 20);
+if ($rndom != 10 && $rndom != 20) {
     echo $rndom;
 }
 
