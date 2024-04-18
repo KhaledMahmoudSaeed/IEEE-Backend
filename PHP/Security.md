@@ -1,11 +1,11 @@
-**What is Security ?**
+**What is Security ?**<br>
 Is to make some specific important information hidden from people who are not allowed or not authorized to have access to it like[name-passwords-emails-birth date-phone number - address]
 
-**Why we need Secuirty in our web pages ?**
+**Why we need Secuirty in our web pages ?**<br>
 
 Because all websites are public and usesrs' personal information are stored on DB , so it is essential t to protect these information form attackers(Hackers),and to make your website secure you must have enough knowlege coupled with suitable action and always improve and develop it because security and hacking are a very dengerous and a long term competition or war, this is an ongoing process that won't stop.
 
-**Who is the Hacker ?**
+**Who is the Hacker ?**<br>
 someone who wants to steal or collect information about something whether a company or people or a government organization,and there are two types of them[White hat Hackers -Black hat Hackers ]
 White hat Hackers :These are the good guys who simulate hacker attacks to improve the security system for a specific destination
 Black hat Hackers :These are the bad guys who want actually damage either your hardware or software or collects information about you to blackmail you or your company whatever for political or personal interests, and there are some kinds of them:
@@ -17,11 +17,11 @@ Black hat Hackers :These are the bad guys who want actually damage either your h
 1. Hacktivists : High level Hackers who deal with huge organizations to some essential data about sensitve palcesin country or something else
 1. Profesionals :Those attackers who you must beware of them , may send spam emails or Keylogger in emails or steal your money from a bank using a credit card or some data he collected from you in several ways.
 
-**What is social engineering ?**
+**What is social engineering ?**<br>
 Is how to make your data secured in real life ,because hackers don't use software ways only to hack you they can get info from your trash that you throw to it your phone number, old password or email.You must also hide confidential information and not it at any way on sticky note or in normal note.
 Beware of what your are sharing in Facebook or X this publicly available information is so important and many people don't pay attention to it.
 
-**Some basic steps must be taken when initialization your first Web page Using PHP :**
+**Some basic steps must be taken when initialization your first Web page Using PHP :**<br>
 
 1. Every directory must have index.php file to prevent (Directorty Listing) the list of content of this directory..... if you want to make this page show Forbbiden message you can creat new file in directory with .htaccess extention and write init Option -Indexes[note that don't involve any senetive data in this file ]..... when internal server error occur that means error in php or htaccess files
 1. Always put your sentive functions or classes in seperate directory(Privte) and then include it in your main page to prevent hacker from editing your functions or classes
