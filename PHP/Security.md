@@ -1,11 +1,15 @@
-**What is Security ?**<br>
+# My Security Notes
+
+## What is Security ?<br>
+
 Is to make some specific important information hidden from people who are not allowed or not authorized to have access to it like[name-passwords-emails-birth date-phone number - address]
 
-**Why we need Secuirty in our web pages ?**<br>
+## Why we need Security in our web pages ?
 
 Because all websites are public and usesrs' personal information are stored on DB , so it is essential t to protect these information form attackers(Hackers),and to make your website secure you must have enough knowlege coupled with suitable action and always improve and develop it because security and hacking are a very dengerous and a long term competition or war, this is an ongoing process that won't stop.
 
-**Who is the Hacker ?**<br>
+## Who is the Hacker ?
+
 someone who wants to steal or collect information about something whether a company or people or a government organization,and there are two types of them[White hat Hackers -Black hat Hackers ]
 White hat Hackers :These are the good guys who simulate hacker attacks to improve the security system for a specific destination
 Black hat Hackers :These are the bad guys who want actually damage either your hardware or software or collects information about you to blackmail you or your company whatever for political or personal interests, and there are some kinds of them:
@@ -17,11 +21,12 @@ Black hat Hackers :These are the bad guys who want actually damage either your h
 1. Hacktivists : High level Hackers who deal with huge organizations to some essential data about sensitve palcesin country or something else
 1. Profesionals :Those attackers who you must beware of them , may send spam emails or Keylogger in emails or steal your money from a bank using a credit card or some data he collected from you in several ways.
 
-**What is social engineering ?**<br>
+## What is social engineering ?
+
 Is how to make your data secured in real life ,because hackers don't use software ways only to hack you they can get info from your trash that you throw to it your phone number, old password or email.You must also hide confidential information and not it at any way on sticky note or in normal note.
 Beware of what your are sharing in Facebook or X this publicly available information is so important and many people don't pay attention to it.
 
-**Some basic steps must be taken when initialization your first Web page Using PHP :**<br>
+## Some basic steps must be taken when initialization your first Web page Using PHP :
 
 1. Every directory must have index.php file to prevent (Directorty Listing) the list of content of this directory..... if you want to make this page show Forbbiden message you can creat new file in directory with .htaccess extention and write init Option -Indexes[note that don't involve any senetive data in this file ]..... when internal server error occur that means error in php or htaccess files
 1. Always put your sentive functions or classes in seperate directory(Privte) and then include it in your main page to prevent hacker from editing your functions or classes
@@ -50,9 +55,8 @@ else{
 }
 ```
 
----
+## Limit points of entry
 
-**Limit points of entry**
 The website must have only one index.php because it will automatically render when enter any directory and include all pages in index.php.
 In includes directory must have home.php not index.php to prevent hackers from run this pages if they write in url includes,because we want home page rendered when index.php in main calls it.
 
@@ -69,7 +73,7 @@ RewriteRule ^(.\*)$ index.php?url=$1 [l,QSA]
 
 ```
 
-**SQL injection**
+## SQL injection
 
 Protection your website must be in several layers at a time to make sure that if they break through one layer there is another one:
 
@@ -81,16 +85,19 @@ Protection your website must be in several layers at a time to make sure that if
    then you will slashed it by addslashes() function so effectively neutralizing them
 3. It is much better if you filter variables that used in qurey that come from users before entered into query using pervious method
 
-**Prepared statements**
+## Prepared statements
 
 You can read&write from database using two methods `mysqli` that specialized in sql only or `PDO` that is a class and used to deal with any database ,it is work as template.
 
 You prepared statements and then all variables will be stored in an array then garp them all to put them in its places in qurey ..its places in qurey are like that `id=:id and view=:view` so that function expects getting qurey and data where qurey is a bare qurey with placholders for the data the actual variable
 
-**cross site scripting XSS**
+## cross site scripting XSS
+
 Every data that comes even through database or url make sure to clean it first by using `htmlspecialchars()` that will return text even it was a dangerous script
 hackers can include dangerous script while signing up either in password field or name or email and after it saved in database if he calls it again the script will be compiled
 
-**Useful links**
+---
+
+### Useful links
 
 - [Some security tricks](https://www.youtube.com/watch?v=bOqTCDfc7Tk&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=6)
