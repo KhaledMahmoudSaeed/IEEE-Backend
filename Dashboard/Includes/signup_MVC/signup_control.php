@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 function create_user(object $pdo, string $username, string $email, string $password, string $gender)
 {
-    // $options = [
-    //     'cost' => 12
-    // ];
-    $hashed_pwd = password_hash($password, PASSWORD_BCRYPT);
+    $options = [
+        'cost' => 12
+    ];
+    $hashed_pwd = password_hash($password, PASSWORD_BCRYPT, $options);
     $query = "INSERT INTO users (username , email , pwd, gender) VALUES (:username,:email,:pwd,:gender);";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(":username", $username);

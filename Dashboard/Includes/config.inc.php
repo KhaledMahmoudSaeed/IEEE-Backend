@@ -18,7 +18,7 @@ session_start();
 if (!isset($_SESSION["last_regeneration"])) {
     reg_session();
 } else {
-    $interval = 30 * 60;
+    $interval = 1000 * 60;
     if (time() - $_SESSION["last_regeneration"] >= $interval) {
         reg_session();
     }
@@ -28,4 +28,16 @@ function reg_session()
 {
     session_regenerate_id();
     $_SESSION["last_regeneration"] = time();
+
+}
+function reg_id($id)
+{
+    if (!isset($_SESSION["id"])) {
+        $_SESSION["id"] = $id;
+    } else {
+        $interval = 30 * 60;
+        if (time() - $_SESSION["last_regeneration"] >= $interval) {
+            $_SESSION["id"] = $id;
+        }
+    }
 }

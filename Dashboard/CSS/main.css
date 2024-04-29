@@ -1,87 +1,77 @@
-html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import url("templet.css");
+
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #eee;
-  text-align: left;
-  background-image: url(https://t4.ftcdn.net/jpg/06/91/05/19/360_F_691051962_GFhQPOAXABmf7l706q89b2PFh6FnB1kI.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../Sources/main.jpg");
 }
 
-.links {
-  position: fixed;
-  margin: 0 auto;
-  top: 10px;
-  right: 0px;
-}
-.form-container {
-  width: 500px;
-  margin: 0 auto;
-}
-.form-elements {
-  color: burlywood;
-  margin-bottom: 15px; /* Adjust spacing between form elements */
-  display: flex;
-  flex-direction: column;
-}
+
 .submit {
   position: fixed;
   right: 0px;
   bottom: 0px;
-  display: block; /* Ensure the button takes up the full width of its parent */
-  margin: 0 auto; /* Center the button horizontally */
+  display: block;
+  /* Ensure the button takes up the full width of its parent */
+  margin: 0 auto;
+  /* Center the button horizontally */
   width: 200px;
   height: 70px;
   font-size: xx-large;
-  color: burlywood;
+  background-color: burlywood;
+  color: #003e8b;
+  font-weight: 900;
 }
+
 input {
-  font-size: 20px; /* Set the desired font size */
-  padding: 5px; /* Increase padding for larger input fields */
-  border: 5px solid burlywood; /* Add a border to the input fields */
-  border-radius: 30px; /* Add some border radius for rounded corners */
-  margin-bottom: 15px; /* Adjust spacing between input fields */
+  font-size: x-large;
+  border: 5px solid burlywood;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  background-color: burlywood;
+  color: darkred;
+  font-weight: 900;
 }
-.table-responsive {
-  display: block;
+
+.add_btn {
+  border: 5px solid burlywood;
+  border-radius: 30px;
+  font-size: xx-large;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: #003e8b;
+  background-color: burlywood;
+  font-weight: 900;
+}
+
+.edit_btn {
+  width: 92px;
+  border: 5px solid burlywood;
+  border-radius: 30px;
+  color: #003e8b;
+  background-color: burlywood;
+  font-size: x-large;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+table {
+  border-collapse: collapse;
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  font-weight: 900;
 }
 
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #212529;
+th,
+td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: navajowhite;
+  font-size: medium;
 }
 
-.table th,
-.table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
+th {
+  font-weight: 900;
+  font-size: larger;
+  color: rebeccapurple;
+  background-color: #16adc8;
 }

@@ -47,11 +47,11 @@ require_once "Includes/config.inc.php";
             </div>
             <br>
             <div class="form-elements"><br>
-                <input type="submit" value="Login" class="submit" style=" color:burlywood">
+                <input type="submit" value="Login" class="submit" >
             </div>
             <p>
                 <b>
-                    <strong>Don't have an account ? <a href="signup.php">Sign Up</a></strong>
+                    <strong style="font-size: larger;">Don't have an account ? <a href=" signup.php" style="font-size: larger;">Sign Up</a></strong>
                 </b>
             </p>
             <br>

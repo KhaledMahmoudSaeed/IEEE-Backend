@@ -1,61 +1,22 @@
-html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import url("templet.css");
+
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #eee;
-  text-align: left;
-  background-image: url(https://t4.ftcdn.net/jpg/06/91/05/19/360_F_691051962_GFhQPOAXABmf7l706q89b2PFh6FnB1kI.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../Sources/main.jpg");
 }
 
-.links {
-  position: fixed;
-  margin: 0 auto;
-  top: 10px;
-  right: 0px;
-}
-.title {
-  top: 5px;
-  position: relative;
-  font-size: large;
-  color: burlywood;
-}
-
-.form-container {
-  width: 400px;
-  margin: 0 auto;
-}
-.form-elements {
-  color: burlywood;
-  margin-bottom: 7px; /* Adjust spacing between form elements */
-  display: flex;
-  flex-direction: column;
-}
 .submit {
   position: relative;
   margin-top: 10px;
-  display: block; /* Ensure the button takes up the full width of its parent */
-  margin-right: 50%; /* Center the button horizontally */
+  display: block;
+  /* Ensure the button takes up the full width of its parent */
+  margin-right: 50%;
+  /* Center the button horizontally */
   width: 200px;
   height: 70px;
   font-size: xx-large;
   color: burlywood;
 }
+
 input {
   font-size: 20px;
   padding: 5px;
@@ -63,6 +24,7 @@ input {
   border-radius: 30px;
   margin-bottom: -5px;
 }
+
 button {
   margin-top: 14px;
   bottom: 77px;
@@ -72,7 +34,8 @@ button {
   border: 5px solid burlywood;
   border-radius: 30px;
   position: relative;
-  display: block; /* Ensure the button takes up the full width of its parent */
+  display: block;
+  /* Ensure the button takes up the full width of its parent */
   /* Center the button horizontally */
   width: 200px;
   height: 70px;

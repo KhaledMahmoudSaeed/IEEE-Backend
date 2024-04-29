@@ -29,32 +29,32 @@
         </div>
         <form method="POST" action="main.inc.php">
             <div class="form-elements">
-                <label for="product-name"><b>Product Name</b></label>
-                <input type="text" name="product-name" autofocus required>
+                <label for="product_name"><b>Product Name</b></label>
+                <input type="text" name="product_name" autofocus required>
             </div>
             <div class="form-elements">
-                <label for="product-price"><b>Product Price</b></label>
-                <input type="number" name="product-price" min="1" required>
+                <label for="product_price"><b>Product Price</b></label>
+                <input type="number" name="product_price" min="1" required>
             </div>
             <div class=" form-elements">
-                <label for="product-sale"><b>Product Sale</b></label>
-                <input type="number" name="product-sale" min="1" required>
+                <label for="product_sale"><b>Product Sale</b></label>
+                <input type="number" name="product_sale" min="1" required>
             </div>
             <div class=" form-elements">
-                <label for="product-saller"><b>Product Saller</b></label>
-                <input type="number" name="product-saller" min="1" required>
+                <label for="product_saller"><b>Product Seller</b></label>
+                <input type="text" name="product_seller" min="1" required>
             </div>
             <div class=" form-elements">
-                <label for="product-image"><b>Product Image</b></label>
-                <input type="file" name="product-image" accept="image/*" required>
+                <label for="product_image"><b>Product Image</b></label>
+                <input type="file" name="product_image" accept="image/*" required>
             </div>
             <div class="form-elements">
-                <label for="product-quantity"><b>Product Quantity</b></label>
-                <input type="number" name="product-quantity" min="1" required>
+                <label for="product_quantity"><b>Product Quantity</b></label>
+                <input type="number" name="product_quantity" min="1" required>
             </div>
-            <div class=" form-elements">
-                <label for="product-description"><b>Product Description</b></label>
-                <input type="text" name="product-description" required>
+            <div class="form-elements">
+                <label for="product_description"><b>Product Description</b></label>
+                <input type="text" name="product_description" required>
             </div>
             <div class="form-elements">
                 <input type="submit" value="Add Product" class="submit" style="color:burlywood">

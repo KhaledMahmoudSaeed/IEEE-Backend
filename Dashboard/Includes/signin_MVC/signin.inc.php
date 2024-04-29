@@ -19,12 +19,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         if (!is_email_wrong($result) && is_password_wrong($pwd, $result["pwd"])) {
             if (is_password_wrong($pwd, $result["pwd"])) {
-                $errors["wrong_password"] = "Passwordwwwwwws or Email is Incorrect";
+                $errors["wrong_password"] = "Password or Email is Incorrect";
             } else {
-                $errors["wrong_password"] = "Passwordttttttts or Email is Incorrect";
+                $errors["wrong_password"] = "Password or Email is Incorrect";
             }
         }
         require_once "../config.inc.php";
+        $id = grap_user_id($pdo, $email);
+        reg_id($id);
+        $_SESSION["id"] = $id;
         if ($errors) {
             $_SESSION["signin_errors"] = $errors;
             header("Location:../index.php");

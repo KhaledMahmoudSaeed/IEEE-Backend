@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #eee;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    position: fixed;
+    margin: 0 auto;
+    top: 10px;
+    right: 0px;
+    font-size: larger;
+}
+
+.form-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-elements {
+    color: burlywood;
+    margin-bottom: 15px;
+    /* Adjust spacing between form elements */
+    display: flex;
+    flex-direction: column;
+}

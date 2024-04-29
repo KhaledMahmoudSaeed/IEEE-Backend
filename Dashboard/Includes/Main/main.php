@@ -27,43 +27,54 @@ require_once ("main_view.php");
         </header>
         <main>
                 <div class="table-responsive">
-                        <button onclick="window.location.href='add-product.php'">Add Product</button>
+                        <button class="add_btn" onclick="window.location.href='add_product.php'">Add Product</button>
                         <table>
                                 <thead>
-                                        <tr>
-                                                <th><b>Id</b></th>
-                                                <th><b>Name</b></th>
-                                                <th><b>Price</b></th>
-                                                <th><b>Sale</b></th>
-                                                <th><b>Seller</b></th>
-                                                <th><b>Img</b></th>
-                                                <th><b>Quantity</b></th>
-                                                <th><b>Description</b></th>
-                                                <th><b>Creation_date</b></th>
-                                                <th><b>Edit/Delete</b></th>
+                                        <th><b>Id</b></th>
+                                        <th><b>Name</b></th>
+                                        <th><b>Price</b></th>
+                                        <th><b>Sale</b></th>
+                                        <th><b>Seller</b></th>
+                                        <th><b>Img</b></th>
+                                        <th><b>Quantity</b></th>
+                                        <th><b>Description</b></th>
+                                        <th><b>Creation_date</b></th>
+                                        <th><b>Edit/Delete</b></th>
                                         </tr>
                                 </thead>
                                 <tbody>
-                                        <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                        <button onclick="window.location.href='edit.php'">Edit</button>
-                                                        <button
-                                                                onclick="window.location.href='delete.php'">Delete</button>
-                                                </td>
-                                        </tr>
+                                        <?php for ($i = 0; $i < 100; $i++) {
+                                                if (isset($data[$i]["id"])) { ?>
+                                                        <tr>
+                                                                <td><?php echo $i + 1 ?></td>
+                                                                <td><?php echo $data[$i]["p_name"] ?></td>
+                                                                <td><?php echo $data[$i]["p_price"] ?></td>
+                                                                <td><?php echo $data[$i]["p_sale"] ?></td>
+                                                                <td><?php echo $data[$i]["p_seller"] ?></td>
+                                                                <td><?php echo $data[$i]["p_img"] ?></td>
+                                                                <td><?php echo $data[$i]["p_quantity"] ?></td>
+                                                                <td><?php echo $data[$i]["p_description"] ?></td>
+                                                                <td><?php echo $data[$i]["creation_date"] ?></td>
+                                                                <td>
+                                                                        <button class="edit_btn"
+                                                                                onclick="window.location.href='edit_product.php?row=<?php echo $i ?>'">Edit</button>
+                                                                        <form action="delete_product.php" method="POST">
+                                                                                <input type="hidden" name="id"
+                                                                                        value="<?php echo $data[$i]["id"]; ?>">
+                                                                                <input type="submit" value="Delete">
+                                                                        </form>
+
+                                                                </td>
+                                                        </tr>
+                                                <?php } else {
+                                                        break;
+                                                }
+                                                ;
+                                        } ?>
                                 </tbody>
                         </table>
                 </div>
-                <div class="form-container">
+                <div class=" form-container">
                         <form action="../../logout.php" method="post">
                                 <div class="form-elements">
                                         <input type="submit" name="logout" value="Logout" class="submit">
