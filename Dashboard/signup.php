@@ -58,11 +58,11 @@ require_once "Includes/config.inc.php";
                 <input type="password" name="re_password" minlength="8" maxlength="16" placeholder="Re-Password">
             </div>
             <input type="radio" name="gender" id="male" value="male">
-            <label for="male" style="color:burlywood">Male</label>
+            <label for="male" style="color:#3699FF">Male</label>
             <input type="radio" name="gender" id="female" value=" female">
-            <label for="female" style="color:burlywood">Female</label>
+            <label for="female" style="color:#3699FF">Female</label>
             <div class="form-elements">
-                <input type="submit" value="Sign Up" class="submit" style=" color:burlywood">
+                <input type="submit" value="Sign Up" class="submit" style="#003e8b">
             </div>
             <p>
                 <b>

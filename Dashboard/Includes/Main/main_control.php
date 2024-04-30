@@ -2,30 +2,6 @@
 
 declare(strict_types=1);
 
-function add_product(
-    object $pdo,
-    string $product_name,
-    int $product_price,
-    int $product_sale,
-    string $product_seller,
-    string $product_image,
-    int $product_quantity,
-    string $product_description,
-    int $user_id
-) {
-    $query = "INSERT INTO products (p_name , p_price , p_sale, p_seller, p_img , p_quantity, p_description,user_id) 
-    VALUES (:p_name,:p_price,:p_sale,:p_seller,:p_img ,:p_quantity ,:p_description,:user_id);";
-    $stmt = $pdo->prepare($query);
-    $stmt->bindParam(":p_name", $product_name);
-    $stmt->bindParam(":p_price", $product_price);
-    $stmt->bindParam(":p_sale", $product_sale);
-    $stmt->bindParam(":p_seller", $product_seller);
-    $stmt->bindParam(":p_img", $product_image);
-    $stmt->bindParam(":p_quantity", $product_quantity);
-    $stmt->bindParam(":p_description", $product_description);
-    $stmt->bindParam(":user_id", $user_id);
-    $stmt->execute();
-}
 function is_inputs_empty(
     string $product_name,
     int $product_price,

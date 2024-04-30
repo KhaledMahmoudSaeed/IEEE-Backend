@@ -5,3 +5,5 @@ require_once ("../config.inc.php");
 require_once ("../dbh.inc.php");
 $id = $_SESSION["id"];
 $data = grap_all_data($pdo, $id);
+$email = $_SESSION["email"];
+$username = grap_user_name($pdo, $email);

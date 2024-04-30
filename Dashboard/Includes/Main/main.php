@@ -25,9 +25,17 @@ require_once ("main_view.php");
                         <a href="https://www.linkedin.com/in/khaled-mahmoud-/"> | LinkedIn</a>
                 </div>
         </header>
+        <div class="side">
+                <button class="add_btn" onclick="window.location.href='add_product.php'">Add
+                        Product</button>
+                <div class="usname"> <?php
+                echo "Welcome," . "<br>" . $username;
+                ?></div>
+        </div>
+
         <main>
-                <div class="table-responsive">
-                        <button class="add_btn" onclick="window.location.href='add_product.php'">Add Product</button>
+                <div class=" table-responsive">
+
                         <table>
                                 <thead>
                                         <th><b>Id</b></th>
@@ -61,7 +69,7 @@ require_once ("main_view.php");
                                                                         <form action="delete_product.php" method="POST">
                                                                                 <input type="hidden" name="id"
                                                                                         value="<?php echo $data[$i]["id"]; ?>">
-                                                                                <input type="submit" value="Delete">
+                                                                                <input type="submit" value="Delete" class="delete">
                                                                         </form>
 
                                                                 </td>

@@ -69,7 +69,7 @@ require_once ("main_view.php");
                     value="<?php echo $data[$_GET["row"]]["p_description"]; ?>" required>
             </div>
             <div class=" form-elements">
-                <input type="submit" value="Edit Product" class="submit" style="color:burlywood">
+                <input type="submit" value="Edit Product" class="submit" style="color:#003e8b">
                 <button onclick="window.location.href='main.php'">Cancel</button>
             </div>
     </div>

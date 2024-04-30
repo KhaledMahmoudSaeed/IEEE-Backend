@@ -1,29 +1,26 @@
 @import url("templet.css");
 
 body {
-  background-image: url("../Sources/main.jpg");
+  background-color: #474C53;
 }
-
 
 .submit {
   position: fixed;
-  right: 0px;
+  left: 0px;
   bottom: 0px;
   display: block;
-  /* Ensure the button takes up the full width of its parent */
   margin: 0 auto;
-  /* Center the button horizontally */
   width: 200px;
   height: 70px;
   font-size: xx-large;
-  background-color: burlywood;
+  background-color: #F64E60;
   color: #003e8b;
   font-weight: 900;
 }
 
 input {
   font-size: x-large;
-  border: 5px solid burlywood;
+  border: 5px solid #F64E60;
   border-radius: 30px;
   margin-bottom: 15px;
   background-color: burlywood;
@@ -32,32 +29,45 @@ input {
 }
 
 .add_btn {
-  border: 5px solid burlywood;
+  border: 5px solid #3699FF;
   border-radius: 30px;
-  font-size: xx-large;
-  position: fixed;
-  top: 10px;
-  left: 10px;
+  position: relative;
+  margin: 0 auto;
   color: #003e8b;
-  background-color: burlywood;
+  background-color: #3699FF;
+  width: 200px;
+  height: 70px;
+  font-size: x-large;
   font-weight: 900;
 }
 
 .edit_btn {
   width: 92px;
-  border: 5px solid burlywood;
+  border: 5px solid #3699FF;
   border-radius: 30px;
   color: #003e8b;
-  background-color: burlywood;
-  font-size: x-large;
+  background-color: #3699FF;
+  font-size: large;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.delete {
+  width: 92px;
+  border: 5px solid #F64E60;
+  border-radius: 30px;
+  color: #003e8b;
+  background-color: #F64E60;
+  font-size: large;
   margin-bottom: 5px;
   font-weight: 900;
 }
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 120%;
   font-weight: 900;
+  background-color: #eee;
 }
 
 th,
@@ -65,13 +75,33 @@ td {
   border: 2px solid #ddd;
   padding: 8px;
   text-align: center;
-  color: navajowhite;
+  color: black;
   font-size: medium;
 }
 
 th {
   font-weight: 900;
   font-size: larger;
-  color: rebeccapurple;
-  background-color: #16adc8;
+  color: #2A2FA0;
+  background-color: #CFD7F2;
+  /* background-color: #16adc8; */
+}
+
+.side {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 200px;
+  height: 1070px;
+  background-color: #4d627e;
+}
+
+.usname {
+  position: relative;
+  top: 200px;
+  color: #2A2FA0;
+  font-size: 22px;
+  font-weight: 900;
 }

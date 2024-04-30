@@ -7,23 +7,28 @@ body {
 
 .submit {
   display: block;
-  /* Ensure the button takes up the full width of its parent */
   margin: 0 auto;
-  /* Center the button horizontally */
   width: 200px;
   height: 70px;
   font-size: xx-large;
+  color: #003e8b;
+  border: 5px solid #3699FF;
+  background-color: #3699FF;
+}
+
+.title {
+  color: #3699FF;
+  margin: 0 auto;
+}
+
+label {
+  color: #3699FF;
 }
 
 input {
   font-size: 20px;
-  /* Set the desired font size */
   padding: 5px;
-  /* Increase padding for larger input fields */
-  border: 5px solid burlywood;
-  /* Add a border to the input fields */
+  border: 5px solid #3699FF;
   border-radius: 30px;
-  /* Add some border radius for rounded corners */
   margin-bottom: 15px;
-  /* Adjust spacing between input fields */
 }

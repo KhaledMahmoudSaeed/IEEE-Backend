@@ -8,19 +8,26 @@ body {
   position: relative;
   margin-top: 10px;
   display: block;
-  /* Ensure the button takes up the full width of its parent */
   margin-right: 50%;
-  /* Center the button horizontally */
   width: 200px;
   height: 70px;
   font-size: xx-large;
-  color: burlywood;
+  border: 5px solid #3699FF;
+  background-color: #3699FF;
+  color: #003e8b;
+}
+
+.title {
+  color: #3699FF;
+  margin: 0 auto;
+  position: relative;
+  top:10px;
 }
 
 input {
   font-size: 20px;
   padding: 5px;
-  border: 5px solid burlywood;
+  border: 5px solid #3699FF;
   border-radius: 30px;
   margin-bottom: -5px;
 }
@@ -31,14 +38,18 @@ button {
   margin-left: 50%;
   font-size: 20px;
   padding: 5px;
-  border: 5px solid burlywood;
   border-radius: 30px;
   position: relative;
   display: block;
-  /* Ensure the button takes up the full width of its parent */
-  /* Center the button horizontally */
   width: 200px;
   height: 70px;
   font-size: xx-large;
-  color: burlywood;
+  color: #003e8b;
+  border: 5px solid #F64E60;
+
+  background-color: #F64E60;
+}
+
+label {
+  color: #3699FF;
 }

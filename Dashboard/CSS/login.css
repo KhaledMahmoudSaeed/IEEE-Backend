@@ -7,16 +7,23 @@ body {
 input {
   font-size: 24px;
   padding: 15px;
-  border: 5px solid burlywood;
-  border-radius: 30px;
+  border: 5px solid #3699FF;  border-radius: 30px;
   margin-bottom: 15px;
 }
 
 .submit {
-  border: 5px solid burlywood;
   border-radius: 30px;
   font-size: xx-large;
   color: #003e8b;
-  background-color: burlywood;
   font-weight: 900;
+  border: 5px solid #3699FF;
+  background-color: #3699FF;
+}
+
+.title {
+  color: #3699FF;
+  margin: 0 auto;
+}
+label{
+    color: #3699FF; 
 }

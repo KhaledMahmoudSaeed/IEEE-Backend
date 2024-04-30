@@ -12,3 +12,18 @@ function find_email(object $pdo, string $email)
     $pdo = null;
     return $result;
 }
+
+function create_user(object $pdo, string $username, string $email, string $password, string $gender)
+{
+    $options = [
+        'cost' => 12
+    ];
+    $hashed_pwd = password_hash($password, PASSWORD_BCRYPT, $options);
+    $query = "INSERT INTO users (username , email , pwd, gender) VALUES (:username,:email,:pwd,:gender);";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":username", $username);
+    $stmt->bindParam(":email", $email);
+    $stmt->bindParam(":pwd", $hashed_pwd);
+    $stmt->bindParam(":gender", $gender);
+    $stmt->execute();
+}
