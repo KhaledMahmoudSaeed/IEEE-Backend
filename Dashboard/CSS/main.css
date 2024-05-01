@@ -67,6 +67,7 @@ table {
   border-collapse: collapse;
   width: 120%;
   font-weight: 900;
+  margin-top: 30px;
   background-color: #eee;
 }
 
@@ -77,6 +78,7 @@ td {
   text-align: center;
   color: black;
   font-size: medium;
+
 }
 
 th {
@@ -84,7 +86,6 @@ th {
   font-size: larger;
   color: #2A2FA0;
   background-color: #CFD7F2;
-  /* background-color: #16adc8; */
 }
 
 .side {
@@ -104,4 +105,16 @@ th {
   color: #2A2FA0;
   font-size: 22px;
   font-weight: 900;
+}
+
+.wrap {
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 1px;
+
+}
+
+.img {
+  width: 100px;
+  height: 100px;
 }

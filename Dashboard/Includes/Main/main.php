@@ -55,14 +55,16 @@ require_once ("main_view.php");
                                                 if (isset($data[$i]["id"])) { ?>
                                                         <tr>
                                                                 <td><?php echo $i + 1 ?></td>
-                                                                <td><?php echo $data[$i]["p_name"] ?></td>
+                                                                <td class="wrap"><?php echo $data[$i]["p_name"] ?></td>
                                                                 <td><?php echo $data[$i]["p_price"] ?></td>
                                                                 <td><?php echo $data[$i]["p_sale"] ?></td>
                                                                 <td><?php echo $data[$i]["p_seller"] ?></td>
-                                                                <td><?php echo $data[$i]["p_img"] ?></td>
+                                                                <td class="img">
+                                                                        <?php echo '<img src=""', htmlspecialchars($data[$i]['p_img']), '" width="100" height="100" />'; ?>
+                                                                </td>
                                                                 <td><?php echo $data[$i]["p_quantity"] ?></td>
-                                                                <td><?php echo $data[$i]["p_description"] ?></td>
-                                                                <td><?php echo $data[$i]["creation_date"] ?></td>
+                                                                <td class="wrap"><?php echo $data[$i]["p_description"] ?></td>
+                                                                <td class="wrap"><?php echo $data[$i]["creation_date"] ?></td>
                                                                 <td>
                                                                         <button class="edit_btn"
                                                                                 onclick="window.location.href='edit_product.php?row=<?php echo $i ?>'">Edit</button>
