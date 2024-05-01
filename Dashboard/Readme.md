@@ -4,8 +4,8 @@
 
 This README provides guidance on setting up and using the Dashboard application. The Dashboard allows users to sign in, sign up, and perform CRUD operations on data stored in a MySQL database. It is built with PHP (without OOP), HTML, and CSS, and the design was created using Figma.
 
-[Overview video](https://drive.google.com/file/d/1VbnEFO_dpKJWA8KCUB5o10lg7j9i7SpI/view?usp=sharing)
-[ERD](ERD.png)
+- [Overview video](https://drive.google.com/file/d/1VbnEFO_dpKJWA8KCUB5o10lg7j9i7SpI/view?usp=sharing) 
+- [ERD](ERD.png)
 
 ## Features
 
