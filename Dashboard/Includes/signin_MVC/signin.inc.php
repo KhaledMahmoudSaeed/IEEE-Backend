@@ -4,11 +4,12 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
     $pwd = $_POST["password"];
-
+    #try to connect to data base 
     try {
         require_once "../dbh.inc.php";
         require_once "signin_control.php";
         require_once "signin_model.php";
+        #check if there any errors
         $errors = [];
         if (is_inputs_empty($email, $pwd)) {
             $errors["empty_inputs"] = "Fill All Input Fields";
@@ -25,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             }
         }
         require_once "../config.inc.php";
+        #store user id in session 
         $id = grap_user_id($pdo, $email);
         reg_id($id);
         $_SESSION["id"] = $id;
@@ -33,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             header("Location:../index.php");
             die();
         }
+        # if there no error it will go to main and tore user email 
         $_SESSION["email"] = $email;
         header("Location:../Main/main.php");
         $pdo = null;

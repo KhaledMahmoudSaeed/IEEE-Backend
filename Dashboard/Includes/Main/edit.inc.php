@@ -8,13 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $product_image = $_POST["product_image"];
     $product_quantity = $_POST["product_quantity"];
     $product_description = $_POST["product_description"];
-    $id = $_POST["id"];
+    $id = $_POST["id"];# comes from hidden input
 
-
+    #connect to database 
     try {
         require_once "../dbh.inc.php";
         require_once "main_control.php";
         require_once "main_model.php";
+        # check if there any errors
         $errors = [];
         if (is_inputs_empty($product_name, $product_price, $product_sale, $product_seller, $product_image, $product_quantity, $product_description)) {
             $errors["empty_inputs"] = "Fill All Input Fields";
@@ -25,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             header("Location:add_product.php");
             die();
         }
+        #grap email from session and then update the product that belongs to this useremail
         $email = $_SESSION["email"];
         //$id = $_SESSION["id"];
         update_product($pdo, $product_name, $product_price, $product_sale, $product_seller, $product_image, $product_quantity, $product_description, $id);

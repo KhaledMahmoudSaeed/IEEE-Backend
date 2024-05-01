@@ -1,6 +1,7 @@
 <?php
+# what qureies will we use in signin page
 declare(strict_types=1);
-
+# grap whole user data from database
 function get_date(object $pdo, string $email)
 {
     $query = "SELECT * FROM users WHERE email=:email;";
@@ -15,6 +16,8 @@ function get_date(object $pdo, string $email)
     // it will return a query if the email is true other wise it will return null
     return $result;
 }
+
+
 function grap_user_id(object $pdo, string $email)
 {
     $query = "SELECT id FROM users WHERE email=:email;";

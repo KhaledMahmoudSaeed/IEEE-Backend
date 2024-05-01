@@ -4,6 +4,7 @@ $dsn = "mysql:host=localhost;dbname=register";
 $dbusername = "root";
 $dbpassword = "";
 
+#try to connect to database unless get error message
 try {
     $pdo = new PDO($dsn, $dbusername, $dbpassword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

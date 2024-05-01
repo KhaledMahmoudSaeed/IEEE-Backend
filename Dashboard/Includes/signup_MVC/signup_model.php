@@ -1,6 +1,7 @@
 <?php
+# what qureies will we use in signup page
 declare(strict_types=1);
-
+#check if the email found in database or not 
 function find_email(object $pdo, string $email)
 {
     $query = "SELECT email FROM users WHERE email=:email;";
@@ -12,7 +13,7 @@ function find_email(object $pdo, string $email)
     $pdo = null;
     return $result;
 }
-
+# create a new user
 function create_user(object $pdo, string $username, string $email, string $password, string $gender)
 {
     $options = [

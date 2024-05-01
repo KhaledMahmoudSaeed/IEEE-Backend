@@ -1,7 +1,8 @@
 <?php
-
+#what will show up on the page 
 declare(strict_types=1);
 
+# if there any errors it will show up 
 function print_signup_errors()
 {
     if (isset($_SESSION["errors_signup"])) {

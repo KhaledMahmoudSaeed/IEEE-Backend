@@ -24,12 +24,14 @@ if (!isset($_SESSION["last_regeneration"])) {
     }
 }
 
+#store time when session_id is regenerated
 function reg_session()
 {
     session_regenerate_id();
     $_SESSION["last_regeneration"] = time();
 
 }
+#store id
 function reg_id($id)
 {
     if (!isset($_SESSION["id"])) {

@@ -8,11 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pwd = $_POST["password"];
     $re_pwd = $_POST["re_password"];
     $gender = $_POST["gender"];
-
+    #try to connect to the database 
     try {
         require_once "../dbh.inc.php";
         require_once "signup_control.php";
         require_once "signup_model.php";
+        #check if there is any error and store them in session or create the user 
         $errors = [];
         if (is_inputs_empty($first_name, $last_name, $email, $pwd, $gender)) {
             $errors["empty_inputs"] = "Fill All Input Fields";

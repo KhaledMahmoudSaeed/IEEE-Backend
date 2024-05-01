@@ -31,7 +31,8 @@ require_once ("main_view.php");
             <h2>Edit Your Product</h2>
         </div>
         <form method="POST" action="edit.inc.php">
-            <input type="hidden" name="id" value="<?php echo $data[$_GET["row"]]["id"]; ?>">
+            <input type="hidden" name="id"
+                value="<?php echo $data[$_GET["row"]]["id"]; ?>"><!--save the user id in hidden input to send it to edit so can know where to store the updates-->
             <div class="form-elements">
                 <label for="product_name"><b>Product Name</b></label>
                 <input type="text" name="product_name" value="<?php echo $data[$_GET["row"]]["p_name"]; ?>" autofocus

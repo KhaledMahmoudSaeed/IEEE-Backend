@@ -67,10 +67,10 @@ require_once ("main_view.php");
                                                                 <td class="wrap"><?php echo $data[$i]["creation_date"] ?></td>
                                                                 <td>
                                                                         <button class="edit_btn"
-                                                                                onclick="window.location.href='edit_product.php?row=<?php echo $i ?>'">Edit</button>
+                                                                                onclick="window.location.href='edit_product.php?row=<?php echo $i ?>'">Edit</button><!-- put row number in url using for grapping it again from get method-->
                                                                         <form action="delete_product.php" method="POST">
                                                                                 <input type="hidden" name="id"
-                                                                                        value="<?php echo $data[$i]["id"]; ?>">
+                                                                                        value="<?php echo $data[$i]["id"]; ?>"><!-- send user id to delete page to delete this record-->
                                                                                 <input type="submit" value="Delete" class="delete">
                                                                         </form>
 

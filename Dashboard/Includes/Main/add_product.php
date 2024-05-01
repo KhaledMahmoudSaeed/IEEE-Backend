@@ -57,7 +57,7 @@
                 <input type="text" name="product_description" required>
             </div>
             <div class="form-elements">
-                <input type="submit" value="Add Product" class="submit" >
+                <input type="submit" value="Add Product" class="submit">
                 <button onclick="window.location.href='main.php'">Cancel</button>
             </div>
     </div>

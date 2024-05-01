@@ -1,8 +1,8 @@
 <?php
-
+#what functions will we use in signup page
 declare(strict_types=1);
 
-
+# check if there any type of error while signup 
 function is_inputs_empty(string $first_name, string $last_name, string $email, string $pwd, $gender)
 {
     if (empty($first_name) || empty($last_name) || empty($email) || empty($pwd) || empty($gender) || $gender == NULL) {
