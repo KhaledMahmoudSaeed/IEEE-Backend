@@ -1,4 +1,4 @@
-# Dashboard Projecth
+# Dashboard Project
 
 ## Overview
 
