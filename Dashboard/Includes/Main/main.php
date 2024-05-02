@@ -60,7 +60,7 @@ require_once ("main_view.php");
                                                                 <td><?php echo $data[$i]["p_sale"] ?></td>
                                                                 <td><?php echo $data[$i]["p_seller"] ?></td>
                                                                 <td class="img">
-                                                                        <?php echo '<img src=""', htmlspecialchars($data[$i]['p_img']), '" width="100" height="100" />'; ?>
+                                                                        <?php echo '<img src=""', $data[$i]['p_img'], '" width="100" height="100" />'; ?><!-- there will be an error if i used htmlspecialchars here!-->
                                                                 </td>
                                                                 <td><?php echo $data[$i]["p_quantity"] ?></td>
                                                                 <td class="wrap"><?php echo $data[$i]["p_description"] ?></td>
