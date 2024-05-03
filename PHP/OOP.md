@@ -6,6 +6,7 @@
 - [Inheritance](#inheritance)
 - [PHP Interfaces & Polymorphism](#php-interfaces--polymorphism)
 - [PHP Traits](#php-traits)
+- [Some Notes](#some-useful-notes-and-points)
 
 ---
 
