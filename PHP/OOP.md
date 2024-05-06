@@ -7,6 +7,8 @@
 - [PHP Interfaces & Polymorphism](#php-interfaces--polymorphism)
 - [PHP Traits](#php-traits)
 - [Some Notes](#some-useful-notes-and-points)
+- [Error Handling In PHP](#error-handling-in-php)
+- [Late Static Binding & How It Works](#late-static-binding--how-it-works)
 
 ---
 
@@ -202,6 +204,50 @@ However, there are three main differences between traits and global functions:
 - Traits can contain class elements and operators such as methods, properties, visibility modifiers (public, protected, private) and class operators (self::, parent::, $this).
 - Traits can be combined: a trait can use other traits. This lets you define different traits combinations without the need of complex include statements.
 
+### Error Handling In PHP
+When creating scripts and web applications, error handling is an important part. If your code lacks error checking code, your program may look very unprofessional and you may be open to security risks.
+
+This tutorial contains some of the most common error checking methods in PHP.
+
+We will show different error handling methods:
+- Simple "die()" statements
+    ```php
+    <?php
+    // To prevent the user from getting an error message , we test whether the file exist before we try to access it:
+    if(file_exists("mytestfile.txt")) {
+    $file = fopen("mytestfile.txt", "r");
+    } else {
+    die("Error: The file does not exist.");
+    }
+    // The code above is more efficient than the earlier code, because it uses a simple error handling mechanism to stop the script after the error.
+    //However, simply stopping the script is not always the right way to go. Let's take a look at alternative PHP functions for handling errors.
+    ```
+- Custom errors and error triggers
+    ```php 
+    error_function(error_level,error_message,error_file,error_line,error_context)
+        /*Creating a custom error handler is quite simple. We simply create a special function that can be called when an error occurs in PHP.
+        This function must be able to handle a minimum of two parameters (error level and error message) but can accept up to five parameters (optionally: file, line-number, and the error context):*/
+    ```
+- Error reporting
+    These error report levels are the different types of error the user-defined error handler can be used for:
+    - E_ERROR
+    - E_WARNING
+    - E_NOTICE
+    - E_USER_ERROR
+    - E_USER_WARNING
+    - E_USER_NOTICE
+    - E_STRICT
+    - E_ALL
+    - 
+### Late Static Binding & How It Works
+
+Basically, it boils down to the fact that the `self` keyword does not follow the same rules of inheritance. `self` always resolves to the class in which it is used. This means that if you make a method in a parent class and call it from a child class, `self` will not reference the child as you might expect.
+
+Late static binding introduces a new use for the `static` keyword, which addresses this particular shortcoming. When you use `static`, it represents the class where you first use it, ie. it 'binds' to the runtime class.
+
+Those are the two basic concepts behind it. The way `self`, `parent` and `static` operate when `static` is in play can be subtle, so rather than go in to more detail, I'd strongly recommend that you study the manual page examples. Once you understand the basics of each keyword, the examples are quite necessary to see what kind of results you're going to get.
+
+---
 ### Some useful Notes and Points
 
 to access any of class's property
@@ -280,6 +326,69 @@ class Second extend First{ public $password;
 		echo parent::SALARY;
 		echo parent::$nationality; } }
 ```
+## We use classes ,interfaces and abstracts to make code more clean and structuer 
+
+
+**Interfaces** are like templet or set of rules that every class must follow it at least unless there will be an error it useful because in projects
+you may use several classes and your team so it is a good choice to make some rules in your project to prevent naming everyone methods or properties
+as he wants ,and it is useful to refere to all classes that use this interface without create many methods in order to sutisfy all classes methods
+as this 
+```php
+interface Payment{
+	public function paynow();
+	public function payprocess();
+}
+
+class Cash implements Payment{
+	public function paynow(){};
+	public function setdate(){};
+	public function payprocess(){
+	$this->paynow();
+	$this->setdate()
+	};
+}
+
+class Vise implements Payment{
+	public function paynow(){};
+	public function setdate(){};
+	public function login(){};
+	public function payprocess(){
+	$this->login();
+	$this->paynow();
+	$this->setdate();
+}
+
+class Buynow {
+	public funtion pay(Payment $paymentobject){
+		$paymentobject->payprocess();// here you call a one method that you sure it exist in each class beacause of interface and then implement it whatever it contains in diffrenet classes
+	}
+}
+
+$cash = new Cash();
+$buy = new Buynow();
+$buy->pay($cash);
+``` 
+
+**Abstract** : is a class that we use just for inherit from it only and not to create an object if there is a method or property that I want to put
+a rule on it to all other classes that will extend  form just put before it abstract word to make sure that developer will use it unless will be an error
+just for structuer purposes
+**Anonymus** : is a class that create and impelement one time in our website in order not to use more memory because after finishing the class will be deleted 
+so it is a good one if you want to do something once
+```php
+<?php
+include_once "classes/simple.class.php";
+
+$regularclass= new Simple;
+$regularclass->hallo();
+
+$anonymsclass =new class(){
+	public function hellllo(){
+		echo "heello";
+	}
+};
+$anonymusclass->hellllo();
+```
+#### In MVC model we use protected to methods or properties which in classes and interact with database because it is not allowed to use this method everywhere!!
 
 ---
 
@@ -289,3 +398,5 @@ class Second extend First{ public $password;
 - [Inheritance](https://www.codecademy.com/resources/blog/what-is-inheritance/)
 - [PHP Interfaces & Polymorphism](https://www.phptutorial.net/php-oop/php-polymorphism/),[Another link](https://anastasionico.uk/blog/interfaces-and-polymorphism-in-php)
 - [PHP Traits](https://alexwebdevelop.com/php-traits/)
+- [Error Handling In PHP](https://www.w3schools.com/php/php_error.asp)
+- [Late Static Binding & How It Works](https://stackoverflow.com/questions/1912902/what-exactly-are-late-static-bindings-in-php)

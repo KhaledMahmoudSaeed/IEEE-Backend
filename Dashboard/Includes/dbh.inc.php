@@ -15,7 +15,7 @@ $dbpassword = "suits";
 try {
     $pdo = new PDO($dsn, $dbusername, $dbpassword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+    // $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); just to make it as default
 } catch (PDOException $e) {
     echo "Data Not Found" . $e->getMessage();
 }
