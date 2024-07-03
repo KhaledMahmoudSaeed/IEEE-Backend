@@ -5,6 +5,7 @@ namespace app\core;
 use app\controllers\SiteController;
 use app\core\Controller;
 
+
 /* instead of wirte require or include in every page we want to use this class we use namespace with the path of it 
 # note that app/ = ./ we define that in composer.json file then all what you must do is to specify your class name only where ever you 
 want to use it but you must write down requier __DIR__ . "/vendor/autoload.php" to use it and also write use app/core so you have
@@ -28,9 +29,14 @@ class App
     public Request $request;
     public Response $response;
     public Controller $controller;
+    public Database $db;
+    public Session $session;
     public function __construct(
-        $root_dir
+        $root_dir,
+        array $config
     ) {
+        $this->session = new Session();
+            $this->db = new Database($config['db']);
         self::$ROOT_DIR = $root_dir;
         $this->request = new Request();
         $this->response = new Response();

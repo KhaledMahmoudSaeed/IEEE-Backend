@@ -16,6 +16,8 @@ abstract class Model
     public const RULE_MIN = 'min';
     public const RULE_MAX = 'max';
     public const RULE_MATCH = 'match';
+    public const RULE_UNIQUE = 'unique';
+
     public array $errors = [];
     abstract public function rules(): array;
 
@@ -27,6 +29,7 @@ abstract class Model
             }
         }
     }
+
     public function validate(
     ) {
         foreach ($this->rules() as $attribute => $rules) {
@@ -49,6 +52,22 @@ abstract class Model
                 if ($rulename === self::RULE_MAX && strlen($value) > $rule['max']) {
                     $this->adderror($attribute, self::RULE_MAX, $rule);
                 }
+                if ($rulename === self::RULE_MATCH && $value !== $this->{$rule['match']}) {
+                    $rule['match'] = $this->getlabel($rule['match']);
+                    $this->adderror($attribute, self::RULE_MATCH, $rule);
+                }
+                if ($rulename === self::RULE_UNIQUE) {
+                    $classname = $rule['class'];
+                    $uniqueAttr = $rule['attribute'] ?? $attribute;
+                    $tabelname = $classname::tableName;
+                    $statment = App::$app->db->prepare("SELECT * FROM $tabelname $uniqueAttr=:attr");
+                    $statment->bindValue(":attr", $value);
+                    $statment->execute();
+                    $record = $statment->fetchObject();
+                    if ($record) {
+                        $this->adderror($attribute, self::RULE_UNIQUE, ['field' => $this->getlabel($attribute)]);
+                    }
+                }
             }
         }
         return empty($this->errors);
@@ -69,6 +88,23 @@ abstract class Model
             self::RULE_MIN => 'min length of this field must be {min}',
             self::RULE_MAX => 'max length of this field must be {max}',
             self::RULE_MATCH => 'This is field must be the same as {match}',
+            self::RULE_UNIQUE => 'Record with this {field} already exists',
         ];
+    }
+    public function haserror($attribute)
+    {
+        return $this->errors[$attribute] ?? false;
+    }
+    public function getFirstError($attribute)
+    {
+        return $this->errors[$attribute][0] ?? false;
+    }
+    public function labels(): array
+    {
+        return [];
+    }
+    public function getlabel($attribute)
+    {
+        return $this->labels()[$attribute] ?? $attribute;
     }
 }

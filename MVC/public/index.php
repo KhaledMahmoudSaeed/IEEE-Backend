@@ -1,13 +1,24 @@
 <?php
 // remember to run php -S localhost:8080 in terminal before starting and run in browser localhost:8080 it will be slightly diffrenet
-require_once __DIR__ . '/../vendor/autoload.php';
 
 use app\controllers\AuthController;
 use app\core\App;
 use app\controllers\SiteController;/* instead of every time when you write /app/core where ever you create a new object, and because App,Router is
 in the same Directory */
 
-$app = new App(dirname(__DIR__));
+require_once __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
+$config = [
+    'db' => [
+        'dsn' => $_ENV['DB_DSN'],
+        'username' => $_ENV['DB_USER'],
+        'password' => $_ENV['DB_PASSWORD'],
+    ]
+];
+
+$app = new App(dirname(__DIR__), $config);
 $sc = new SiteController();
 $au = new AuthController();
 $sc->appAccess($app);

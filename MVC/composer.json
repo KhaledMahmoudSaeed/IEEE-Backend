@@ -11,5 +11,7 @@
 			"email": "khaild22k12m71f@gmail.com"
 		}
 	],
-	"require": {}
+	"require": {
+		"vlucas/phpdotenv": "^5.6"
+	}
 }

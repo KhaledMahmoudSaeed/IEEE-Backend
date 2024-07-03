@@ -14,11 +14,11 @@ use app\core\Request;
  */
 class Registermodel extends Model
 {
-    public string $firstname;
-    public string $lastname;
-    public string $email;
-    public string $password;
-    public string $prepassword;
+    public string $firstname = ' ';
+    public string $lastname = ' ';
+    public string $email = ' ';
+    public string $password = ' ';
+    public string $prepassword = ' ';
     public function register()
     {
 
