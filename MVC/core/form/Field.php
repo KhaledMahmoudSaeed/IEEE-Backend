@@ -9,7 +9,7 @@ use app\core\Model;
  * @author KhaledMahmoudSaeed <khaild22k12m71f@gmail.com>
  * @package app\core\form
  */
-class Field
+class Field extends BaseField
 {
     public const TYPE_TEXT = 'text';
     public const TYPE_PASSWORD = 'password';
@@ -27,8 +27,7 @@ class Field
     public function __construct(Model $model, string $attribute)
     {
         $this->type = self::TYPE_TEXT;
-        $this->model = $model;
-        $this->attribute = $attribute;
+        parent::__construct($model, $attribute);
     }
     public function __tostring()
     {
@@ -53,5 +52,15 @@ class Field
     {
         $this->type = self::TYPE_PASSWORD;
         return $this;
+    }
+    public function renderInput()
+    {
+        return sprintf(
+            '<input type="%s" class="form-control%s" name="%s" value="%s">',
+            $this->type,
+            $this->model->hasError($this->attribute) ? ' is-invalid' : '',
+            $this->attribute,
+            $this->model->{$this->attribute},
+        );
     }
 }

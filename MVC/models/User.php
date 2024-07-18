@@ -6,6 +6,7 @@ use app\core\Controller;
 use app\core\DbModel;
 use app\core\Model;
 use app\core\Request;
+use app\core\UserModel;
 
 /**
  * Class User
@@ -13,7 +14,7 @@ use app\core\Request;
  * @author KhaledMahmoudSaeed <khaild22k12m71f@gmail.com>
  * @package app\models
  */
-class User extends DbModel
+class User extends UserModel
 {
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 1;
@@ -28,15 +29,20 @@ class User extends DbModel
     {
         $this->status = self::STATUS_INACTIVE;
         $this->password = password_hash($this->password, PASSWORD_DEFAULT);
-        return $this->save();
+        // return $this->save();
+        return parent::save();
     }
     public function attributes(): array
     {
-        return ['firstname', 'lastname', 'email', 'password'];
+        return ['firstname', 'lastname', 'email', 'password', 'status'];
     }
-    public function tableName(): string
+    public static function tableName(): string
     {
-        return 'user';
+        return 'users';
+    }
+    public function primaryKey(): string
+    {
+        return 'id';
     }
     public function rules(): array
     {
@@ -61,9 +67,13 @@ class User extends DbModel
             [
                 'firstname' => 'First Name',
                 'lastname' => 'Last Name',
-                'email' => 'email',
+                'email' => 'Email',
                 'password' => 'Password',
-                'prepassword' => 'Prepassword',
+                'prepassword' => 'Re-password',
             ];
+    }
+    public function getDisplayname(): string
+    {
+        return $this->firstname . ' ' . $this->lastname;
     }
 }

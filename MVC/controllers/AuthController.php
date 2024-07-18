@@ -1,9 +1,12 @@
 <?php
 namespace app\controllers;
 
-
+use app\core\App;
 use app\core\Controller;
+use app\core\Middlewares\AuthMiddleware;
 use app\core\Request;
+use app\core\Response;
+use app\models\LoginForm;
 use app\models\User;
 
 /**
@@ -14,38 +17,53 @@ use app\models\User;
  */
 class AuthController extends Controller
 {
-    // public function __construct(
-    //     $app
-    // ) {
-    //     $this->app = $app;
-    // }
+
     public $firstname;
-    public function appAccess(
-        $app
-    ) {
-        self::$app = $app;
+    public function __construct()
+    {
+        $this->registerMiddleware(new AuthMiddleware(['profile']));
     }
-    static function login(
+    public function login(
+        Request $request,
+        Response $response
     ) {
-        self::setlayout('auth');
-        return self::render('login');
+        $loginform = new LoginForm();
+        if ($request->isPost()) {
+            $loginform->loaddata($request->getbody());
+            if ($loginform->validate() && $loginform->login()) {
+                $response->redirect('/');
+                return;
+            }
+        }
+        $this->setlayout('auth');
+        return $this->render('login', ['model' => $loginform]);
     }
-    static function register(Request $request)
+    public function register(Request $request)
     {
         $errors = [];
         $user = new User();
-        self::setlayout('auth');
+        $this->setlayout('auth');
         if ($request->isPost()) {
             $user->loaddata($request->getbody());
 
             if ($user->validate() && $user->save()) {
-                App::$app->session->setFlash('success', "Thanks");
+                App::$app->session->setFlash('success', 'Successful Registration');
+                //echo App::$app->session->getFlash('success');
                 App::$app->response->redirect('/');
             }
 
-            return self::render('register', ['model' => $user]);
+            return $this->render('register', ['model' => $user]);
         }
-        self::setlayout('auth');
-        return self::render('register', ['model' => $user]);
+        $this->setlayout('auth');
+        return $this->render('register', ['model' => $user]);
+    }
+    public function logout(Request $request, Response $response)
+    {
+        App::$app->logout();
+        $response->redirect('/');
+    }
+    public function profile()
+    {
+        return $this->render('profile');
     }
 }

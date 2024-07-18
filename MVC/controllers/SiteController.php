@@ -6,6 +6,7 @@ namespace app\controllers;
 use app\core\App;
 use app\core\Controller;
 use app\core\Request;
+use app\models\ContactForm;
 
 /**
  * Class SiteController
@@ -22,30 +23,25 @@ class SiteController extends Controller
     to prevent such error
     Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method app\controllers\SiteController::handelcontact() cannot be called statically
     // that is why we use call_user_func with object from anthor class */
-    // public function __construct(
-    //     $app
-    // ) {
-    //     $this->app = $app;
-    // }
-    public function appAccess($app)
-    {
-        self::$app = $app;
-    }
-    static function home()
+
+    public function home()
     {
         $params = [
             "name" => "Khaled"
         ];
-        return self::render('home', $params);
+        return $this->render('home', $params);
     }
-    static function contact()
+    public function contact(Request $request)
     {
-        return self::render('contact');
+        $contact = new ContactForm();
+        if ($request->isPost()) {
+            $contact->loaddata($request->getbody());
+            if ($contact->validate() && $contact->send()) {
+                App::$app->session->setFlash('success', 'Thanks for Contacting us ');
+                return $response->redirect('/contact');
+            }
+        }
+        return $this->render('contact', ['model'=>$contact]);
     }
-    static function handelcontact(
-        Request $request
-    ) {
-        $body = $request->getbody();
-        return "Handling Submitted data";
-    }
+
 }

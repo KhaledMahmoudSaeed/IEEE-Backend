@@ -4,6 +4,8 @@ namespace app\core;
 
 use app\core\Controller;
 use app\core\App;
+use app\core\Middlewares;
+use app\core\exception\NotFoundException;
 
 /**
  * Class Router
@@ -14,13 +16,14 @@ use app\core\App;
 
 class Router
 {
+
     /**
      * Router constructor
      * @param \app\core\Request $requset
      * @param \app\core\Response $response  
+     * @param \app\core\Response $r
      */
     protected array $routes = [];
-    public $type;
     public Response $response;
     public Controller $controller;
     public Request $request;
@@ -50,47 +53,30 @@ class Router
         $method = $this->request->method();
         $callback = $this->routes[$method][$path] ?? false;
         if ($callback === false) {
-            $this->response->setstatuscode(404);
-            return $this->renderview('_404');
+            throw new NotFoundException();
         }
         if (is_string($callback)) {
-            return $this->renderview($callback);
+            return App::$app->view->renderview($callback);
         }
         if (is_array($callback)) {
-            $callback[0] = new $callback[0]();
-            if (get_class($callback[0]) === "app\controllers\SiteController") {
-                $this->type = "main";
-            } else {
-                $this->type = "auth";
+            // $callback[0] = new $callback[0]();
+            // if (get_class($callback[0]) === "app\controllers\SiteController") {
+            //     $this->type = "main";
+            // } else {
+            //     $this->type = "auth";
+            // }
+            // }
+            /** @var  \app\core\Controller $controller  */
+            $controller = new $callback[0]();
+            App::$app->controller = $controller;
+            $controller->action = $callback[1];
+            foreach ($controller->getMiddleware() as $middleware) {
+                $middleware->execute();
             }
+            $callback[0] = $controller;
 
         }
-
         // here must transfer string to object by asign $callback[0]= new $callback[0](); but i have a problem here because i have a constractor for SiteController
-        return call_user_func($callback, $this->request);
-    }
-    public function renderview($view, $params = [])
-    {
-        $layoutcontent = $this->Layoutcontent();
-        $viewcontent = $this->renderonlyview($view, $params);
-        return str_replace("{content}", $viewcontent, $layoutcontent);
-    }
-    public function Layoutcontent()
-    {
-
-        // $layout = App::$app->controller->layout;
-        ob_start();//  start caching
-        include App::$ROOT_DIR . "../views/layouts/$this->type.php";
-        return ob_get_clean();// clean buffer
-    }
-    protected function renderonlyview($view, $params)
-    {
-        foreach ($params as $key => $value) {
-            $$key = $value;
-        }
-
-        ob_start();//  start caching
-        include App::$ROOT_DIR . "../views/$view.php";
-        return ob_get_clean();// clean buffer
+        return call_user_func($callback, $this->request, $this->response);
     }
 }

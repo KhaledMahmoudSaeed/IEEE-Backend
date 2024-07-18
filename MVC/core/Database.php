@@ -1,6 +1,5 @@
 <?php
 
-
 namespace app\core;
 
 use app\core\App;
@@ -20,7 +19,7 @@ class Database
     public function __construct($dbConfig = [])
     {
         $dbDsn = $dbConfig['dsn'] ?? '';
-        $username = $dbConfig['user'] ?? '';
+        $username = $dbConfig['username'] ?? '';
         $password = $dbConfig['password'] ?? '';
 
         $this->pdo = new \PDO($dbDsn, $username, $password);
@@ -39,7 +38,7 @@ class Database
             if ($migration === '.' || $migration === '..') {
                 continue;
             }
-            require_once App::$ROOT_DIR . '/migrations/' . $migration;
+            require_once App::$ROOT_DIR . '/migrations' . '/' . $migration;
             $className = pathinfo($migration, PATHINFO_FILENAME);
             $instance = new $className();
             $this->log("Applying migration $migration");
@@ -86,7 +85,7 @@ class Database
         return $this->pdo->prepare($sql);
     }
 
-    private function log($message)
+    protected function log($message)
     {
         echo "[" . date("Y-m-d H:i:s") . "] - " . $message . PHP_EOL;
     }

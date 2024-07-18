@@ -1,4 +1,6 @@
 <?php
+use app\core\App;
+
 /**
  * User: TheCodeholic
  * Date: 7/10/2020
@@ -9,7 +11,7 @@ class m0001_initial
 {
     public function up()
     {
-        $db = \thecodeholic\phpmvc\Application::$app->db;
+        $db = App::$app->db;
         $SQL = "CREATE TABLE users (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 email VARCHAR(255) NOT NULL,
@@ -23,7 +25,7 @@ class m0001_initial
 
     public function down()
     {
-        $db = \thecodeholic\phpmvc\Application::$app->db;
+        $db = App::$app->db;
         $SQL = "DROP TABLE users;";
         $db->pdo->exec($SQL);
     }
