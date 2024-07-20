@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dc5685b51c61186ecd9e49498c95b66",
+    "content-hash": "f821c8cf3fdaaadc4ecb0f64ea6b30a7",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -67,6 +67,39 @@
                 }
             ],
             "time": "2023-11-12T22:16:48+00:00"
+        },
+        {
+            "name": "khaild/phpfirst",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KhaledMahmoudSaeed/kh-php-mvc-core.git",
+                "reference": "ed3639e3ca7d9c300863315c6b17ce6c808c662b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KhaledMahmoudSaeed/kh-php-mvc-core/zipball/ed3639e3ca7d9c300863315c6b17ce6c808c662b",
+                "reference": "ed3639e3ca7d9c300863315c6b17ce6c808c662b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Khaild\\Phpfirst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "KhaledMahmoudSaeed",
+                    "email": "khaild22k12m71f@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/KhaledMahmoudSaeed/kh-php-mvc-core/issues",
+                "source": "https://github.com/KhaledMahmoudSaeed/kh-php-mvc-core/tree/v1.0.2"
+            },
+            "time": "2024-07-18T04:59:13+00:00"
         },
         {
             "name": "phpoption/phpoption",
