@@ -1,0 +1,1 @@
+<a {{$attributes->merge(['class' => 'relative inline-flex items-center px-6 py-3 ml-3 text-md font-bold text-white bg-blue-500 border border-blue-700 hover:bg-blue-700 dark:text-white dark:focus:border-blue-500 dark:active:bg-blue-500 dark:active:text-white shadow-lg'])}}>{{$slot}}</a>

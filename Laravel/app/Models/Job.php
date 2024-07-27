@@ -9,7 +9,8 @@ class Job extends Model
 {
     use HasFactory;
     protected $table = 'job_listings';
-    protected $fillable = ['title', 'salary'];
+    // protected $fillable = ['title', 'salary','employer_id'];
+    protected $guarded = [];// to disable featuer of restricted the inputs filed you say hey you don't want to guard any thing
     public function employer()
     {
         return $this->belongsTo(Employer::class);
