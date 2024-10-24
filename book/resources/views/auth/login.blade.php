@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layout>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -18,7 +16,8 @@
                                 <div class="col-md-6">
                                     <input id="email" type="email"
                                         class="form-control bg-slate-700 text-amber-500 @error('email') is-invalid @enderror"
-                                        name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                        name="email" value="{{ old('email') }}" required autocomplete="email"
+                                        autofocus>
 
                                     @error('email')
                                         <span class="invalid-feedback text-amber-500" role="alert">
@@ -59,7 +58,7 @@
                             </div>
 
                             <div class="row mb-0">
-                                <div class="col-md-8 offset-md-4">
+                                <div class="col-md-6 offset-md-4">
                                     <button type="submit"
                                         class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer">
                                         {{ __('Login') }}
@@ -79,4 +78,4 @@
             </div>
         </div>
     </div>
-@endsection
+</x-layout>
